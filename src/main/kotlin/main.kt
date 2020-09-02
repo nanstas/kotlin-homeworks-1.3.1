@@ -14,7 +14,7 @@ fun agoToText(seconds: Int): String {
 }
 
 fun minutesAgo(seconds: Int): String {
-    val minutes = (seconds / 60)
+    val minutes = seconds / 60
     val minutesString = minutes.toString()
     val lastSymbol = minutesString.toCharArray()[minutesString.length - 1]
     val penultimateSymbol = penultimateSymbol(minutes)
@@ -27,7 +27,7 @@ fun minutesAgo(seconds: Int): String {
 }
 
 fun hoursAgo(seconds: Int): String {
-    val hours = (seconds / 60 / 60)
+    val hours = seconds / 60 / 60
     val hoursString = hours.toString()
     val lastSymbol = hoursString.toCharArray()[hoursString.length - 1]
     val penultimateSymbol = penultimateSymbol(hours)
